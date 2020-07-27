@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ContentTools sandbox</title>
+        <link rel="stylesheet" type="text/css" href="css/sandbox.css">
+        <link rel="stylesheet" type="text/css" href="css/content-tools.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <article class="article" style="margin-top: 50px">
+                 <a
+                    data-ce-tag="p"
+                    data-fixture
+                    data-name="article-link"
+                    href="/test">
+                    Test link fixture
+                </a>
+                 <hr>           
+                <div data-editable data-name="article">
+                    <h1 style="text-align: center">
+                        Title editing
+                    </h1>
+                    <p style="text-align: center">
+                        Paragraph editing
+                    </p>
+                </div>
+                <hr>
+                <div data-editable data-name="video">
+                    <iframe
+                        width="400"
+                        height="300"
+                        src="https://www.youtube.com/embed/I9jSKFk5Zp0"
+                        frameborder="0"
+                    ></iframe>
+                </div>
+                <hr>
+
+                <div
+                   data-ce-tag="img-fixture"
+                   data-fixture
+                   style="background-image: url('images/author-pic.jpg');"
+                   class="image-fixture">
+                   <img src="images/author-pic.jpg" alt="Some image">
+                </div>
+                <hr>
+        </article>
+        <script type="text/javascript" src="js/daniel.js"></script>
+        <script type="text/javascript" src="js/content-tools.js"></script>
+        <script type="text/javascript" src="js/sandbox.js"></script>
+    </body>
+</html>
